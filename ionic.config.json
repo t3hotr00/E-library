@@ -1,0 +1,8 @@
+{
+  "name": "E-libary",
+  "app_id": "0410d273",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
