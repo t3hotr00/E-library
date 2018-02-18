@@ -35,7 +35,7 @@ this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value)
 .then(data => {
 console.log('got some data', this.fire.auth.currentUser);
 this.alert('Success! You\'re logged in');
-this.navCtrl.setRoot( BooksPage );
+this.navCtrl.setRoot( LoggedinPage );
 
 
 })

@@ -10,17 +10,21 @@ import { BookinfoPage } from '../bookinfo/bookinfo';
   templateUrl: 'loggedin.html',
 })
 export class LoggedinPage {
-  myBook: any;
-  newBook: any;
-  bookInfo: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.myBook = MybookPage;
-    this.newBook = NewbookPage;
-    this.bookInfo = BookinfoPage;
-  }
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoggedinPage');
   }
 
+  myBook() {
+      this.navCtrl.setRoot ( MybookPage );
+  }
+  newBook() {
+        this.navCtrl.setRoot ( NewbookPage );
+  }
+  bookInfo() {
+        this.navCtrl.setRoot ( BookinfoPage );
+  }
 }

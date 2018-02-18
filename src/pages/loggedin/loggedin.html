@@ -9,7 +9,7 @@
     <ion-title id="title">Store</ion-title>
 
     <ion-buttons right>
-      <button ion-button color="royal" [navPush]="myBook">
+      <button ion-button color="royal" (click)="myBook()">
         My books
       </button>
     </ion-buttons>
@@ -25,7 +25,7 @@
   </ion-label>
   <ion-scroll scrollX="true" class="horizontal-item-view">
     <div class="inner">
-      <ion-card [navPush]="bookInfo">
+      <ion-card (click)="bookInfo()">
         <img src="assets/imgs/thumbnail-book-1.jpg">
         <ion-card-content>
           Book 1
@@ -47,7 +47,7 @@
       </ion-card>
     </div>
   </ion-scroll>
-  <button ion-button clear float-right [navPush]="newBook">More</button>
+  <button ion-button clear float-right (click)="newBook()">More</button>
   <br>
   <ion-label>
     <h4>Popular right now</h4>
