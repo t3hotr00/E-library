@@ -10,6 +10,9 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { LoggedinPage } from '../pages/loggedin/loggedin';
 import { RegisterPage } from '../pages/register/register';
+import { MybookPage } from '../pages/mybook/mybook';
+import { NewbookPage } from '../pages/newbook/newbook';
+import { BookinfoPage } from '../pages/bookinfo/bookinfo';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
@@ -30,7 +33,10 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     HomePage,
     LoginPage,
     RegisterPage,
-    LoggedinPage
+    LoggedinPage,
+    MybookPage,
+    NewbookPage,
+    BookinfoPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,10 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     HomePage,
     LoginPage,
     RegisterPage,
-   LoggedinPage
+    LoggedinPage,
+    MybookPage,
+    NewbookPage,
+    BookinfoPage
 
   ],
   providers: [

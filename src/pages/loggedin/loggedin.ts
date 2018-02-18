@@ -19,12 +19,12 @@ export class LoggedinPage {
   }
 
   myBook() {
-      this.navCtrl.setRoot ( MybookPage );
+      this.navCtrl.push ( MybookPage );
   }
   newBook() {
-        this.navCtrl.setRoot ( NewbookPage );
+        this.navCtrl.push  ( NewbookPage );
   }
   bookInfo() {
-        this.navCtrl.setRoot ( BookinfoPage );
+        this.navCtrl.push ( BookinfoPage );
   }
 }
