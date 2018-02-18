@@ -13,10 +13,10 @@ export class RegisterPage {
 
 
 	@ViewChild('username') user;
-    @ViewChild('password') password;
+  @ViewChild('password') password;
 
   constructor(private alertCtrl:AlertController, private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
- 
+
 
  }
 
@@ -40,7 +40,7 @@ this.alert('Registered!');
 
   	})
   	.catch(error => {
-  	console.log('got an error ', error);	
+  	console.log('got an error ', error);
 this.alert(error.message);
 
   	});

@@ -1,0 +1,17 @@
+page-bookinfo {
+#title {
+    text-align: center;
+  }
+.card img {
+    width: 255px;
+    height: 330px;
+    transform: translateX(25%);
+  }
+.card button {
+    font-size: 20px;
+    padding: 25px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}

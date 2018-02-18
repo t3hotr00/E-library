@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AngularFireAuth } from 'angularfire2/auth';
+import { MybookPage } from '../mybook/mybook';
+import { NewbookPage } from '../newbook/newbook';
+import { BookinfoPage } from '../bookinfo/bookinfo';
 
 @IonicPage()
 @Component({
@@ -8,13 +10,14 @@ import { AngularFireAuth } from 'angularfire2/auth';
   templateUrl: 'loggedin.html',
 })
 export class LoggedinPage {
-
-	email: string;
-
-  constructor(private fire: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
-  this.email = fire.auth.currentUser.email;
-}
-
+  myBook: any;
+  newBook: any;
+  bookInfo: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.myBook = MybookPage;
+    this.newBook = NewbookPage;
+    this.bookInfo = BookinfoPage;
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoggedinPage');

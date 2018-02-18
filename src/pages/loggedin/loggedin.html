@@ -1,13 +1,109 @@
-
 <ion-header>
+  <ion-toolbar>
+    <ion-buttons left>
+      <button ion-button color="royal" (click)="myProfile()">
+        My profile
+      </button>
+    </ion-buttons>
 
-  <ion-navbar>
-    <ion-title>UI of the page</ion-title>
-  </ion-navbar>
+    <ion-title id="title">Store</ion-title>
 
+    <ion-buttons right>
+      <button ion-button color="royal" [navPush]="myBook">
+        My books
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
-
 <ion-content padding>
-{{email}}
+  <p>
+    <button ion-button block (click)="Reading()">Continue reading</button>
+  </p>
+  <ion-label>
+    <h4>New to library</h4>
+  </ion-label>
+  <ion-scroll scrollX="true" class="horizontal-item-view">
+    <div class="inner">
+      <ion-card [navPush]="bookInfo">
+        <img src="assets/imgs/thumbnail-book-1.jpg">
+        <ion-card-content>
+          Book 1
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-2.jpg">
+        <ion-card-content>
+          Book 2
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-3.jpg">
+        <ion-card-content>
+          Book 3
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-scroll>
+  <button ion-button clear float-right [navPush]="newBook">More</button>
+  <br>
+  <ion-label>
+    <h4>Popular right now</h4>
+  </ion-label>
+  <ion-scroll scrollX="true" class="horizontal-item-view">
+    <div class="inner">
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-4.jpg">
+        <ion-card-content>
+          Book 4
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-5.jpg">
+        <ion-card-content>
+          Book 5
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-6.jpg">
+        <ion-card-content>
+          Book 6
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-scroll>
+  <button ion-button clear float-right (click)="popBook()">More</button>
+  <br>
+  <ion-label>
+    <h4>Recommended for you</h4>
+  </ion-label>
+  <ion-scroll scrollX="true" class="horizontal-item-view">
+    <div class="inner">
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-7.jpg">
+        <ion-card-content>
+          Book 7
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-8.jpg">
+        <ion-card-content>
+          Book 8
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-9.jpg">
+        <ion-card-content>
+          Book 9
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-scroll>
+  <button ion-button clear float-right (click)="recBook()">More</button>
 </ion-content>
