@@ -23,7 +23,7 @@ export class LoginPage {
   }
 
   alert(message: string) {
- this.alertCtrl.create({title: 'Info!',
+ this.alertCtrl.create({title: 'Info',
       subTitle: message,
       buttons: ['OK']
 }).present();
@@ -35,7 +35,7 @@ this.fire.auth.signInWithEmailAndPassword(this.user.value, this.password.value)
 .then(data => {
 console.log('got some data', this.fire.auth.currentUser);
 this.alert('Success! You\'re logged in');
-this.navCtrl.setRoot( LoggedinPage );
+this.navCtrl.setRoot( BooksPage );
 
 
 })
