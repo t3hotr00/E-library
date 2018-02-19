@@ -13,6 +13,7 @@ import { RegisterPage } from '../pages/register/register';
 import { MybookPage } from '../pages/mybook/mybook';
 import { NewbookPage } from '../pages/newbook/newbook';
 import { BookinfoPage } from '../pages/bookinfo/bookinfo';
+import { MyprofilePage } from '../pages/myprofile/myprofile';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
@@ -36,7 +37,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     LoggedinPage,
     MybookPage,
     NewbookPage,
-    BookinfoPage
+    BookinfoPage,
+    MyprofilePage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     LoggedinPage,
     MybookPage,
     NewbookPage,
-    BookinfoPage
+    BookinfoPage,
+    MyprofilePage
 
   ],
   providers: [

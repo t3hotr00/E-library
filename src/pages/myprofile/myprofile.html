@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My profile</ion-title>
+    <ion-buttons right>
+      <button ion-button color="royal" (click)="signOut()">
+        Sign out
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile-div">
+    <button ion-button id="profile-upload-button" icon-only>
+      <ion-icon name="camera" is-active="false"></ion-icon>
+    </button>
+    <img src="assets/imgs/logo.png">
+    <button ion-button round id="personal-button" block>Personal Detail</button>
+    <button ion-button round id="payment-button" block>Payment Method</button>
+  </div>
+  <ion-label style="padding-left:3%;">
+    <h4>Number of books rented: ?</h4>
+  </ion-label>
+  <ion-label>
+    <h4 style="padding-left:3%;">Currently rented books</h4>
+  </ion-label>
+  <ion-scroll scrollX="true" class="horizontal-item-view">
+    <div class="inner">
+      <ion-card (click)="bookInfo()">
+        <img src="assets/imgs/thumbnail-book-1.jpg">
+        <ion-card-content>
+          Book 1
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-4.jpg">
+        <ion-card-content>
+          Book 4
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-7.jpg">
+        <ion-card-content>
+          Book 7
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-scroll>
+  <button ion-button clear float-right>More</button>
+  <br>
+  <ion-label>
+    <h4 style="padding-left:3%;">Previously rented books</h4>
+  </ion-label>
+  <ion-scroll scrollX="true" class="horizontal-item-view">
+    <div class="inner">
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-2.jpg">
+        <ion-card-content>
+          Book 2
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-5.jpg">
+        <ion-card-content>
+          Book 5
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/imgs/thumbnail-book-8.jpg">
+        <ion-card-content>
+          Book 8
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-scroll>
+  <button ion-button clear float-right>More</button>
+  <br>
+</ion-content>
