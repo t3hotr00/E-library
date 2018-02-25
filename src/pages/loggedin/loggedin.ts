@@ -4,6 +4,7 @@ import { MybookPage } from '../mybook/mybook';
 import { NewbookPage } from '../newbook/newbook';
 import { BookinfoPage } from '../bookinfo/bookinfo';
 import { MyprofilePage } from '../myprofile/myprofile';
+import { PdfPage } from '../pdf/pdf';
 
 @IonicPage()
 @Component({
@@ -30,5 +31,9 @@ export class LoggedinPage {
   }
   myProfile() {
     this.navCtrl.push ( MyprofilePage );
+  }
+  pdf() {
+  this.navCtrl.push ( PdfPage );
+
   }
 }

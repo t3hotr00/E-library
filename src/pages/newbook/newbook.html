@@ -18,7 +18,7 @@
       <h2>Book 1</h2>
       <h3>By Author 1</h3>
       <p>X days left</p>
-      <button ion-button clear item-end>Info</button>
+      <button ion-button clear><p><a href="https://firebasestorage.googleapis.com/v0/b/e-library-65616.appspot.com/o/images%2FAnimal-Nutrition.pdf?alt=media&token=a9b53a0d-bad2-4cba-a066-45ef4a771ed3">Read the book</a></p></button>
     </ion-item>
 
     <ion-item>
@@ -29,6 +29,9 @@
       <h3>By Author 2</h3>
       <p>Y days left</p>
       <button ion-button clear item-end>Info</button>
+
+
+
     </ion-item>
 
     <ion-item>
@@ -40,6 +43,9 @@
       <p>Z days left</p>
       <button ion-button clear item-end>Info</button>
     </ion-item>
+
+ <img src={{currentImage}} />
+    <button ion-button clear (click)="grabPicture()">add picture</button>
 
   </ion-list>
 </ion-content>
